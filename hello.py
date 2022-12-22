@@ -7,8 +7,9 @@ def hello(name, color):
     if name == "azure":
         click.echo("Thor, you are always red.")
         click.echo(click.style(f"Hello {name}!", fg="red"))
-    else:
-        pass
+    else:            
+        click.echo(f"Your color is {color}!")
+        click.echo(click.style(f"Hello {name}!", fg=color))
 
 if __name__ == "__main__":
     hello()
