@@ -12,9 +12,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
     
     - name: Run make hello command
-      run: |
-        make hello
+      run: make hello
     
